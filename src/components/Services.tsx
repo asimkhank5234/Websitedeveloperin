@@ -86,7 +86,7 @@ export default function Services() {
   };
 
   return (
-    <section id="services" class="py-24 bg-[#070b16] relative scroll-reveal">
+    <section id="services" className="py-24 bg-[#070b16] relative scroll-reveal">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Title */}
         <div className="text-center space-y-4 mb-20 scroll-reveal">

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, MessageSquare, ExternalLink } from 'lucide-react';
-import ExportButton from './ExportButton';
+import { Menu, X, MessageSquare } from 'lucide-react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +22,6 @@ export default function Navbar() {
 
         {/* Desktop CTA actions */}
         <div className="hidden md:flex items-center space-x-4">
-          <ExportButton />
           <a
             href="https://wa.me/923455161393"
             target="_blank"
@@ -37,7 +35,6 @@ export default function Navbar() {
 
         {/* Mobile Hamburger menu trigger */}
         <div className="md:hidden flex items-center gap-2">
-          <ExportButton />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-white-text hover:text-brand-orange focus:outline-none p-1.5 rounded-lg border border-white/5 bg-slate-900/40"

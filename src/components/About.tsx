@@ -68,7 +68,7 @@ export default function About() {
             The Strategist
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white-text leading-tight">
-            8+ Years of <span class="text-brand-orange">Refining</span> The Digital Craft in Attock
+            8+ Years of <span className="text-brand-orange">Refining</span> The Digital Craft in Attock
           </h2>
           <div className="space-y-4 text-sm text-muted-text leading-relaxed">
             <p>
