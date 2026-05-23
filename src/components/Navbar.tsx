@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { Menu, X, MessageSquare } from 'lucide-react';
+import WebMatrixLogo from './WebMatrixLogo';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-brand-dark-bg/85 border-b border-white/5 transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-3.5 flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="font-serif text-3xl font-extrabold tracking-tight text-white-text hover:text-brand-orange transition-colors">
-          Asim<span className="text-brand-orange">.</span>
+        <a href="#home" className="transition-transform hover:scale-[1.02] duration-300">
+          <WebMatrixLogo size="sm" />
         </a>
 
         {/* Desktop Navigation Links */}

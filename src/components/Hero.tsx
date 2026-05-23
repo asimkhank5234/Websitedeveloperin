@@ -1,5 +1,6 @@
 import React from 'react';
-import { Star, MessageSquare, ChevronRight, Zap } from 'lucide-react';
+import { Star, MessageSquare } from 'lucide-react';
+import WebMatrixLogo from './WebMatrixLogo';
 
 export default function Hero() {
   return (
@@ -16,7 +17,7 @@ export default function Hero() {
             <span className="animate-badge-pulse absolute inline-flex h-full w-full rounded-full bg-brand-teal opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-teal"></span>
           </span>
-          <span>⚡ Available for Projects</span>
+          <span>⚡ WebMatrix Solutions &middot; Live Agency</span>
         </div>
 
         {/* Dynamic Typography Header */}
@@ -26,7 +27,7 @@ export default function Hero() {
 
         {/* Concise Subtext */}
         <p className="text-lg text-muted-text max-w-xl leading-relaxed">
-          I'm <span className="text-white-text font-bold">Asim Saleem</span>, a Website Designer and Digital Marketing Expert with <span className="text-white-text font-bold">8+ years of dedicated experience</span>. I craft ultra-fast, search-engine-optimized websites and run ad campaigns designed to maximize local and global engagement.
+          Get smart websites and premium SEO services by <span className="text-white-text font-bold">WebMatrix Solutions</span>, founded by <span className="text-white-text font-bold">Asim Saleem</span>. With <span className="text-white-text font-bold">8+ years of dedicated expertise</span>, we build ultra-fast, Google-ranked sites and custom campaigns that fuel business growth.
         </p>
 
         {/* Main buttons */}
@@ -35,13 +36,13 @@ export default function Hero() {
             href="https://wa.me/923455161393"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-brand-orange hover:bg-brand-orange/95 text-white-text py-4 px-8 rounded-full font-bold text-center tracking-wide transition-all duration-300 hover:shadow-lg hover:shadow-brand-orange/20 active:scale-95"
+            className="bg-brand-orange hover:bg-brand-orange/95 text-white-text py-4 px-8 rounded-full font-bold text-center tracking-wide transition-all duration-300 hover:shadow-lg hover:shadow-brand-orange/20 hover:scale-[1.02] active:scale-95"
           >
             💬 Get Free Consultation
           </a>
           <a
             href="#services"
-            className="border border-brand-teal hover:bg-brand-teal/10 text-brand-teal py-4 px-8 rounded-full font-bold text-center tracking-wide transition-all duration-300 active:scale-95"
+            className="border border-brand-teal hover:bg-brand-teal/10 text-brand-teal py-4 px-8 rounded-full font-bold text-center tracking-wide transition-all duration-300 hover:scale-[1.02] active:scale-95"
           >
             Explore Services
           </a>
@@ -68,21 +69,17 @@ export default function Hero() {
 
       {/* Floating Card Column (Right) */}
       <div className="flex-1 flex justify-center items-center z-10 w-full scroll-reveal">
-        <div className="animate-float w-full max-w-sm bg-card-bg border border-brand-orange/10 p-8 rounded-3xl shadow-2xl relative overflow-hidden backdrop-blur-md">
+        <div className="animate-float w-full max-w-md bg-card-bg border border-brand-orange/10 p-8 sm:p-10 rounded-3xl shadow-2xl relative overflow-hidden backdrop-blur-md">
           {/* Inner ambient flare */}
           <div className="absolute -top-12 -right-12 w-28 h-28 bg-gradient-to-br from-brand-orange to-brand-teal rounded-full opacity-10 filter blur-xl"></div>
           
           <div className="flex flex-col items-center text-center space-y-6 relative z-10">
-            {/* Gradient Ring Profile Avatar */}
-            <div className="relative">
-              <div className="w-28 h-28 rounded-full bg-gradient-to-tr from-brand-orange to-brand-teal p-1 shadow-lg">
-                <div className="w-full h-full bg-card-bg rounded-full flex items-center justify-center font-serif text-5xl font-extrabold text-white-text">
-                  A
-                </div>
-              </div>
+            {/* Real Logo Vector Instead of placeholder */}
+            <div className="relative p-2.5 bg-brand-dark-bg/40 rounded-2xl border border-white/10 shadow-inner">
+              <WebMatrixLogo size="lg" showText={false} />
               {/* Verification badge */}
               <div 
-                className="absolute bottom-1 right-1 bg-[#25d366] text-white-text text-xs font-bold p-1 rounded-full border-2 border-card-bg shadow-md"
+                className="absolute -bottom-1 -right-1 bg-[#25d366] text-white-text text-xs font-bold p-1 rounded-full border-2 border-card-bg shadow-md"
                 title="Google Reviewed Expert"
               >
                 ✓
@@ -90,29 +87,29 @@ export default function Hero() {
             </div>
 
             {/* Profile context */}
-            <div className="space-y-1.5">
-              <h2 className="font-serif text-2xl font-bold text-white-text">Asim Saleem</h2>
-              <p className="text-brand-teal font-semibold text-xs tracking-wider uppercase">Website Designer & Digital Marketer</p>
+            <div className="space-y-2">
+              <WebMatrixLogo size="md" className="justify-center" />
+              <p className="text-muted-text text-sm">Led by <span className="text-white-text font-semibold">Asim Saleem</span> &middot; Attock, PK</p>
             </div>
 
             {/* Verified standard badge */}
-            <div className="flex flex-col items-center gap-1.5 py-1.5 px-5 bg-black/40 rounded-full border border-white/5 shadow-inner">
-              <div className="flex text-amber-400 gap-0.5">
+            <div className="flex flex-col items-center gap-1.5 py-2 px-6 bg-black/40 rounded-2xl border border-white/5 shadow-inner">
+              <div className="flex text-amber-400 gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                  <Star key={i} className="w-4 h-4 fill-current" />
                 ))}
               </div>
-              <p className="text-xs text-white-text font-semibold tracking-wide">5.0 &middot; Google Review</p>
+              <p className="text-xs text-white-text font-semibold tracking-wide">5.0 &middot; Google Business Verified</p>
             </div>
 
             {/* Specialized Skill Chips */}
             <div className="flex flex-wrap gap-2 justify-center pt-2">
-              <span className="px-3 py-1 bg-slate-900 text-[11px] font-medium text-pink-400 rounded-full border border-pink-500/10">Web Design</span>
-              <span className="px-3 py-1 bg-slate-900 text-[11px] font-medium text-blue-400 rounded-full border border-blue-500/10">SEO Optimization</span>
-              <span className="px-3 py-1 bg-slate-900 text-[11px] font-medium text-yellow-400 rounded-full border border-yellow-500/10">Google Ads</span>
-              <span className="px-3 py-1 bg-slate-900 text-[11px] font-medium text-cyan-400 rounded-full border border-cyan-500/10">E-Commerce</span>
-              <span className="px-3 py-1 bg-slate-900 text-[11px] font-medium text-orange-400 rounded-full border border-orange-500/10">Social Media</span>
-              <span className="px-3 py-1 bg-slate-900 text-[11px] font-medium text-red-400 rounded-full border border-red-500/10">Attock PK</span>
+              <span className="px-3 py-1 bg-slate-950 text-xs font-medium text-pink-400 rounded-full border border-pink-500/10">🌐 Web Design</span>
+              <span className="px-3 py-1 bg-slate-950 text-xs font-medium text-blue-400 rounded-full border border-blue-500/10">📈 SEO Strategy</span>
+              <span className="px-3 py-1 bg-slate-950 text-xs font-medium text-yellow-400 rounded-full border border-yellow-500/10">🎯 Google Ads</span>
+              <span className="px-3 py-1 bg-slate-950 text-xs font-medium text-cyan-400 rounded-full border border-cyan-500/10">🛒 E-Commerce</span>
+              <span className="px-3 py-1 bg-slate-950 text-xs font-medium text-orange-400 rounded-full border border-orange-500/10">📣 SMM</span>
+              <span className="px-3 py-1 bg-slate-950 text-xs font-medium text-[#2fbab3] rounded-full border border-[#2fbab3]/10">💼 GBP Audit</span>
             </div>
           </div>
         </div>
