@@ -5,27 +5,27 @@ import { MilestoneItem } from '../types';
 export default function About() {
   const milestones: MilestoneItem[] = [
     {
-      year: '2016 · START',
+      year: '2022 · START',
       title: 'Freelance Design Genesis',
       description: 'Began freelance web design career, engineering responsive and engaging digital experiences for worldwide businesses.',
       iconType: 'college'
     },
     {
-      year: '2018 · GROWTH',
+      year: '2023 · GROWTH',
       title: 'SEO & Performance Expansion',
       description: 'Strengthened capabilities by incorporating comprehensive search-ranking mechanisms and advanced direct promotion campaigns.',
       iconType: 'growth'
     },
     {
-      year: '2020 · MILESTONE',
+      year: '2024 · MILESTONE',
       title: 'Full-Scale Service Launch in Attock',
       description: 'Established full-scale, conversion-driven digital agency based out of Sheen Bagh, Attock directly backing regional merchants.',
       iconType: 'milestone'
     },
     {
-      year: '2024 · TODAY',
+      year: '2026 · TODAY',
       title: '5.0 Google Reviewed Authority',
-      description: 'Cemented status as top resource for localized enterprises, boasting 8+ years experience and 24/7 client operations.',
+      description: 'Cemented status as top resource for localized enterprises, boasting 4+ years experience and 24/7 client operations.',
       iconType: 'star'
     }
   ];
@@ -68,7 +68,7 @@ export default function About() {
             The Strategist
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white-text leading-tight">
-            8+ Years of <span className="text-brand-orange">Refining</span> The Digital Craft in Attock
+            4+ Years of <span className="text-brand-orange">Refining</span> The Digital Craft in Attock
           </h2>
           <div className="space-y-4 text-sm text-muted-text leading-relaxed">
             <p>

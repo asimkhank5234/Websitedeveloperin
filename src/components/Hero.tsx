@@ -27,7 +27,7 @@ export default function Hero() {
 
         {/* Concise Subtext */}
         <p className="text-lg text-muted-text max-w-xl leading-relaxed">
-          Get smart websites and premium SEO services by <span className="text-white-text font-bold">WebMatrix Solutions</span>, founded by <span className="text-white-text font-bold">Asim Saleem</span>. With <span className="text-white-text font-bold">8+ years of dedicated expertise</span>, we build ultra-fast, Google-ranked sites and custom campaigns that fuel business growth.
+          Get smart websites and premium SEO services by <span className="text-white-text font-bold">WebMatrix Solutions</span>, founded by <span className="text-white-text font-bold">Asim Saleem</span>. With <span className="text-white-text font-bold">4+ years of dedicated expertise</span>, we build ultra-fast, Google-ranked sites and custom campaigns that fuel business growth.
         </p>
 
         {/* Main buttons */}
@@ -51,7 +51,7 @@ export default function Hero() {
         {/* Local Verification Stats */}
         <div className="grid grid-cols-3 gap-4 pt-8 border-t border-white/5">
           <div className="space-y-1">
-            <div className="text-2xl sm:text-3xl font-serif font-bold text-brand-orange">8+ Years</div>
+            <div className="text-2xl sm:text-3xl font-serif font-bold text-brand-orange">4+ Years</div>
             <p className="text-[10px] text-muted-text uppercase tracking-widest font-bold">Industry Exp.</p>
           </div>
           <div className="space-y-1">
