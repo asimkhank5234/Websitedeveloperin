@@ -11,6 +11,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import WhatsAppFloating from './components/WhatsAppFloating';
 
 export default function App() {
   useEffect(() => {
@@ -63,7 +64,8 @@ export default function App() {
       {/* Legal & address layouts */}
       <Footer />
 
-      {/* Quick top back-navigation */}
+      {/* Quick top back-navigation and persistent WhatsApp support */}
+      <WhatsAppFloating />
       <ScrollToTop />
     </div>
   );
