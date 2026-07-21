@@ -7,18 +7,32 @@
   
   --color-brand-orange: #f98300;
   --color-brand-teal: #2fbab3;
-  --color-dark-bg: #0a0f1e;
-  --color-card-bg: #111827;
-  --color-white-text: #f8f9ff;
-  --color-muted-text: #94a3b8;
+  --color-brand-blue: #1D4ED8;
+  --color-brand-link: #2563EB;
+  --color-hero-bg: #F3F4F6;
+  --color-footer-bg: #111827;
+  --color-footer-text: #E5E7EB;
+  --color-paragraph-text: #374151;
+  --color-dark-bg: #F3F4F6;
+  --color-card-bg: #FFFFFF;
+  --color-white-text: #111827;
+  --color-muted-text: #374151;
 }
 
 @layer base {
   body {
-    background-color: #0a0f1e;
-    color: #f8f9ff;
+    background-color: #F3F4F6;
+    color: #374151;
     font-family: "DM Sans", sans-serif;
     overflow-x: hidden;
+  }
+
+  p {
+    color: #374151;
+  }
+
+  a {
+    transition: color 0.2s ease, background-color 0.2s ease;
   }
 }
 

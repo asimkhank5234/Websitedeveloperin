@@ -86,18 +86,18 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-24 bg-[#070b16] relative scroll-reveal">
+    <section id="services" className="py-24 bg-[#F3F4F6] text-[#111827] relative scroll-reveal">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Title */}
         <div className="text-center space-y-4 mb-20 scroll-reveal">
-          <span className="text-sm font-semibold tracking-widest text-[#2fbab3] uppercase bg-[#2fbab3]/10 px-4 py-1.5 rounded-full">
+          <span className="text-xs font-semibold tracking-widest text-[#1D4ED8] uppercase bg-blue-100 border border-blue-200 px-4 py-1.5 rounded-full select-none">
             Expert Offerings
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white-text">
-            High-Converting <span className="text-brand-orange">Professional</span> Services
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#111827]">
+            High-Converting <span className="text-[#2563EB]">Professional</span> Services
           </h2>
-          <p className="text-base text-muted-text max-w-xl mx-auto">
-            Leveraging 8+ years of expertise to design interfaces and marketing funnels that turn searchers into lifetime customers.
+          <p className="text-base text-[#374151] max-w-xl mx-auto">
+            Leveraging 4+ years of expertise to design interfaces and marketing funnels that turn searchers into lifetime customers.
           </p>
         </div>
 
@@ -106,22 +106,22 @@ export default function Services() {
           {serviceItems.map((item) => (
             <div
               key={item.id}
-              className="bg-card-bg p-8 rounded-2xl flex flex-col justify-between hover-underline-anim card-glow-hover h-full"
+              className="bg-white border border-gray-200 p-8 rounded-2xl flex flex-col justify-between hover:border-blue-400 hover:shadow-xl transition-all duration-300 h-full shadow-sm"
             >
               <div className="space-y-5">
-                {/* Custom rounded box header with brand-orange/12 background */}
-                <div className="w-12 h-12 rounded-xl bg-[#f98300]/12 flex items-center justify-center text-brand-orange">
+                {/* Custom rounded box header with blue background */}
+                <div className="w-12 h-12 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center text-[#1D4ED8]">
                   {getIcon(item.iconName)}
                 </div>
-                <h3 className="font-serif text-lg font-bold text-white-text select-text">{item.title}</h3>
-                <p className="text-sm text-muted-text leading-relaxed select-text">{item.description}</p>
+                <h3 className="font-serif text-lg font-bold text-[#111827] select-text">{item.title}</h3>
+                <p className="text-sm text-[#374151] leading-relaxed select-text">{item.description}</p>
               </div>
 
-              {/* Bullet list specifications with orange indicators */}
-              <ul className="mt-8 pt-6 border-t border-white/5 space-y-2.5 text-xs text-muted-text uppercase font-semibold tracking-wider">
+              {/* Bullet list specifications with blue indicators */}
+              <ul className="mt-8 pt-6 border-t border-gray-200 space-y-2.5 text-xs text-[#374151] uppercase font-semibold tracking-wider">
                 {item.bullets.map((bullet, idx) => (
                   <li key={idx} className="flex items-center gap-2">
-                    <span className="text-brand-teal text-lg leading-none">&bull;</span>
+                    <span className="text-[#2563EB] text-lg leading-none">&bull;</span>
                     <span>{bullet}</span>
                   </li>
                 ))}
