@@ -24,8 +24,8 @@ export default function App() {
         }
       });
     }, {
-      threshold: 0.08,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.01,
+      rootMargin: '100px 0px 100px 0px'
     });
 
     revealElements.forEach((el) => observer.observe(el));
@@ -49,17 +49,20 @@ export default function App() {
       {/* Sticky Header System */}
       <Navbar />
 
-      {/* Primary Hero presentation */}
-      <Hero />
+      {/* Main Content Area for SEO Search Engines */}
+      <main id="main-content">
+        {/* Primary Hero presentation */}
+        <Hero />
 
-      {/* Professional services collection breakdown */}
-      <Services />
+        {/* Professional services collection breakdown */}
+        <Services />
 
-      {/* Biographies, skills and timelines */}
-      <About />
+        {/* Biographies, skills and timelines */}
+        <About />
 
-      {/* Form inquiries and support channels */}
-      <Contact />
+        {/* Form inquiries and support channels */}
+        <Contact />
+      </main>
 
       {/* Legal & address layouts */}
       <Footer />

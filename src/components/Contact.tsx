@@ -222,7 +222,7 @@ Details: ${formData.message}`;
                 📘 Facebook
               </a>
               <a
-                href="https://www.instagram.com/asimkhank5234/"
+                href="https://www.instagram.com/asimwebsitedesigners/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white border border-gray-300 hover:border-[#2563EB] hover:text-[#2563EB] py-2 px-4 rounded-full text-xs font-semibold text-[#374151] transition-all shadow-sm"

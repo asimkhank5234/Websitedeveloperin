@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="glow-blob blob-orange top-1/2 right-10 opacity-10" />
 
         {/* Info Column (Left) */}
-        <div className="flex-1 space-y-8 z-10 scroll-reveal">
+        <div className="flex-1 space-y-8 z-10">
           {/* Animated project status badge */}
           <div className="inline-flex items-center gap-2 bg-white/90 border border-[#2563EB]/20 px-4 py-2 rounded-full text-xs font-semibold tracking-wide uppercase text-[#1D4ED8] shadow-sm select-none">
             <span className="relative flex h-2 w-2">
@@ -69,7 +69,7 @@ export default function Hero() {
         </div>
 
         {/* Floating Card Column (Right) */}
-        <div className="flex-1 flex justify-center items-center z-10 w-full scroll-reveal">
+        <div className="flex-1 flex justify-center items-center z-10 w-full">
           <div className="animate-float w-full max-w-md bg-white border border-gray-200 p-8 sm:p-10 rounded-3xl shadow-2xl relative overflow-hidden backdrop-blur-md">
             {/* Inner ambient flare */}
             <div className="absolute -top-12 -right-12 w-28 h-28 bg-blue-100 rounded-full opacity-50 filter blur-xl"></div>
